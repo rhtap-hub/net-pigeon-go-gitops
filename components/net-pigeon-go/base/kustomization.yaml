@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  argocd/app-name: net-pigeon-go
+  janus-idp.io/tekton: net-pigeon-go
+  backstage.io/kubernetes-id: net-pigeon-go
+  backstage.io/kubernetes-namespace: rhtap-app 
+  app.kubernetes.io/part-of: net-pigeon-go
+resources: 
+- deployment.yaml
+- route.yaml
+- service.yaml

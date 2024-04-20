@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: net-pigeon-go-gitops-repository
+spec:
+  url: https://github.com/rhtap-hub/net-pigeon-go-gitops
